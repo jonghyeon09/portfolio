@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   //타이핑 효과
-  const content = "신입 프론트엔드 개발자 정종현입니다";
+  const content = "프론트엔드 개발자 정종현의 포트폴리오 입니다";
   const text = document.querySelector(".text");
   let i = 0;
 
@@ -25,47 +25,45 @@ $(document).ready(function () {
   }
   setInterval(blink, 500);
 
-  //눈
-  // function createSnow() {
-  //   const el = document.createElement("div");
-  //   el.classList.add('snow');
-  //   document.getElementsByClassName('.wrap').appendChild(el);
-  // }
-  // createSnow();
-
   //네비이동
   let offset = 0;
   let bts = document.querySelectorAll(".bt");
-  let menu_h = $(".m_menu").height();
-
+  
   $(bts[0]).click(function () {
     offset = $(".home").offset();
     scroll_ani();
+    $(bts).removeClass("color"); //컬러초기화
+    $(this).addClass("color"); //클릭시 컬러변경
   })
   $(bts[1]).click(function () {
     offset = $(".about").offset();
     scroll_ani();
+    $(bts).removeClass("color");
+    $(this).addClass("color");
   })
   $(bts[2]).click(function () {
     offset = $(".skills").offset();
     scroll_ani();
+    $(bts).removeClass("color");
+    $(this).addClass("color");
   })
   $(bts[3]).click(function () {
     offset = $(".p_wrap").offset();
     scroll_ani();
+    $(bts).removeClass("color");
+    $(this).addClass("color");
   })
   $(bts[4]).click(function () {
     offset = $(".contact").offset();
     scroll_ani();
+    $(bts).removeClass("color");
+    $(this).addClass("color");
   })
 
   function scroll_ani() {
     $("html").stop().animate({scrollTop:offset.top - 60}, 300)
   }
 
-  // $(window).resize(function () {
-  //   $('.home').css('height', $(window).height());
-  //   });
 
   //스크롤시 네비배경 나타남
   nav();
@@ -73,7 +71,7 @@ $(document).ready(function () {
   function nav() {
     $(window).scroll(function () {
       let scroll = $(this).scrollTop();
-      if (scroll > 100) {
+      if (scroll > 1) {
         $("header").css({
           "background-color": "white"
         })
@@ -87,6 +85,13 @@ $(document).ready(function () {
       }
     })
   };
+
+  //메뉴클릭시 색상변경
+  function m_color(){
+      $(window).scroll(function () {
+        
+      })
+  }
 
   //햄버거메뉴
   var span = document.querySelectorAll('span');
