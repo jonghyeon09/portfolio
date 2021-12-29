@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //타이핑 효과
-  const content = "프론트엔드 개발자 정종현의 포트폴리오 입니다";
+  const content = "Welcome to my Portfolio";
   const text = document.querySelector(".text");
   let i = 0;
 
@@ -26,7 +26,13 @@ $(document).ready(function () {
   //네비이동
   let offset = 0;
   const bts = document.querySelectorAll(".bt");
+  const title = document.querySelector(".nav_title");
   const m_menuh = 60;
+
+  $(title).click(function () {
+    offset = $(".home").offset();
+    scroll_ani();
+  });
 
   $(bts[0]).click(function () {
     offset = $(".home").offset();
