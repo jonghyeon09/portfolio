@@ -27,7 +27,7 @@ $(document).ready(function () {
   let offset = 0;
   const bts = document.querySelectorAll(".bt");
   const title = document.querySelector(".nav_title");
-  const m_menuh = 60;
+  const m_menuh = $("header").height();
 
   $(title).click(function () {
     offset = $(".home").offset();

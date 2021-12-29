@@ -64,7 +64,6 @@
   }
   .m_menu .bt:hover {
     cursor: pointer;
-    font-weight: bold;
     color: black;
   }
   .about {
@@ -76,7 +75,7 @@
     /* padding-top: 60px;
     box-sizing: border-box; */
   }
-  .about .l_box {
+  .about .about_title {
     width: 100%;
     height: 100px;
     display: flex;
@@ -84,7 +83,7 @@
     align-items: center;
     /* background-color: rgb(96, 132, 139); */
   }
-  .about .r_box {
+  .about .text_box {
     width: 100%;
     height: 100%;
     display: flex;
