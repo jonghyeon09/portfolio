@@ -38,6 +38,9 @@
   .h_menu span:nth-child(3) {
     bottom: 0;
   }
+  .nav .nav_title {
+    display: none;
+  }
   .m_menu {
     position: absolute;
     top: 0px;
