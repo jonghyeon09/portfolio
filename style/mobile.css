@@ -4,8 +4,8 @@
     height: 60px;
     position: relative;
     position: fixed;
-    /* background-color: white;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); */
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   }
   header .h_menu {
     width: 30px;
@@ -41,6 +41,15 @@
   .nav .nav_title {
     display: none;
   }
+  .title {
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .m_menu {
     position: absolute;
     top: 0px;
@@ -68,34 +77,17 @@
   }
   .about {
     width: 100%;
-    height: 700px;
-    background-color: rgb(241, 226, 245);
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* padding-top: 60px;
-    box-sizing: border-box; */
+    padding: 30px;
+    box-sizing: border-box;
   }
-  .about .about_title {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(96, 132, 139); */
-  }
-  .about .text_box {
+  .about .about_text {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: rgb(117, 242, 128);
-  }
-  .title {
-    margin: 0 auto;
-    width: 150px;
-    height: 50px;
-    background-color: rgb(74, 153, 26);
-    font-size: 30px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -104,9 +96,8 @@
   }
   .skills {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
-    background-color: rgb(0, 114, 235);
   }
   .skills img {
     width: 100%;
@@ -120,7 +111,6 @@
   .front,
   .back {
     text-align: center;
-    background-color: rgb(98, 128, 11);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -131,42 +121,65 @@
   .back .logo {
     width: 120px;
     height: 120px;
-    background-color: rgb(23, 176, 190);
     margin: 10px 10px;
     border-radius: 20%;
   }
   .p_wrap {
     width: 100%;
-    background-color: pink;
+    background-color: gray;
+    padding: 30px 0;
+    box-sizing: border-box;
   }
   .p_wrap .portfolio {
     margin: 0 auto;
     width: 90%;
-    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 20px;
   }
   .portfolio .img_box {
     width: 80vw;
     height: 40vw;
-    background-color: rgb(135, 223, 245);
-    margin-bottom: 10px;
+  }
+  .img_box img {
+    width: 100%;
+    height: 100%;
   }
   .portfolio .text_box {
     width: 80vw;
     height: 40vw;
-    background-color: rgb(32, 57, 85);
+  }
+  .text_box h1,
+  p,
+  a {
+    margin: 10px 10px;
+    line-height: 1.5;
+  }
+  .text_box a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .text_box a:hover {
+    background-color: black;
+    color: white;
   }
   .contact {
     width: 100%;
     height: 200px;
-    background-color: rgb(57, 193, 185);
   }
   .email {
-    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
   }
 }

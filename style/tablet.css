@@ -1,26 +1,26 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  header{
+  header {
     width: 100%;
     height: 60px;
     position: relative;
     position: fixed;
-    /* background-color: white;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); */
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   }
-  header .h_menu{
+  header .h_menu {
     width: 30px;
     height: 20px;
     position: absolute;
-    right: 30px; top: 50%;
+    right: 30px;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 100;
     /* background-color: black; */
   }
-  header .h_menu:hover{
+  header .h_menu:hover {
     cursor: pointer;
   }
-  .h_menu span{
+  .h_menu span {
     display: block;
     width: 100%;
     height: 2px;
@@ -30,17 +30,30 @@
     border-radius: 2px;
     transition: opacity 0.3s, top 0.3s, transform 0.3s;
   }
-  .h_menu span:nth-child(2){
+  .h_menu span:nth-child(2) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  .h_menu span:nth-child(3){
+  .h_menu span:nth-child(3) {
     bottom: 0;
   }
-  .m_menu{
+  .nav .nav_title {
+    display: none;
+  }
+  .title {
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .m_menu {
     position: absolute;
-    top: 0px; right: -160px;
+    top: 0px;
+    right: -160px;
     width: 150px;
     height: 100vh;
     background-color: white;
@@ -49,7 +62,7 @@
     z-index: 99;
     box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5);
   }
-  .m_menu .bt{
+  .m_menu .bt {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -58,140 +71,115 @@
     color: gray;
     font-weight: bold;
   }
-  .m_menu .bt:hover{
+  .m_menu .bt:hover {
     cursor: pointer;
     color: black;
   }
-  section{
+  .about {
     width: 100%;
-  }
-  .home{
-    width: 100%;
-    height: 100vh;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .typing_box{
-    text-align: center;
-    font-size: 3vw;
-    color: white;
-  }
-  #cusor{
-    position: relative;
-    display: inline-block;
-  }
-  #cusor::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0; right: -4px;
-    width: 2px;
     height: 100%;
-    background-color: white;
-    animation: blink 1s infinite;
-  }
-  @keyframes blink {
-    50%{
-      opacity: 0;
-    }
-  }
-  .about{
-    width: 100%;
-    height: 700px;
-    background-color: rgb(241, 226, 245);
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding: 30px;
     box-sizing: border-box;
   }
-  .about .l_box{
-    width: 100%; height: 100px;
+  .about .about_text {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(96, 132, 139); */
-  }
-  .about .r_box{
-    width: 100%; height: 100%;
-    display: flex;
-    background-color: rgb(117, 242, 128);
-  }
-  .title{
-    margin: 0 auto;
-    width: 150px; height: 50px;
-    background-color: rgb(74, 153, 26);
-    font-size: 30px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  h1{
+  h1 {
     margin: 10px;
   }
-  .skills{
+  .skills {
     width: 100%;
-    height: 700px;
+    height: 100%;
     text-align: center;
-    background-color: rgb(0, 114, 235);
-    padding-top: 60px;
-    box-sizing: border-box;
+  }
+  .skills img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
   }
   /* .skills p{
     text-align: center;
     font-size: 30px;
   } */
-  .front, .back{
+  .front,
+  .back {
     text-align: center;
-    background-color: rgb(98, 128, 11);
-    /* position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
   }
-  .front .logo, .back .logo{
-    width: 120px; height: 120px;
-    background-color: rgb(23, 176, 190);
+  .front .logo,
+  .back .logo {
+    width: 120px;
+    height: 120px;
     margin: 10px 10px;
     border-radius: 20%;
   }
-  .p_wrap{
+  .p_wrap {
     width: 100%;
-    background-color: pink;
-    padding: 60px 0;
+    background-color: gray;
+    padding: 30px 0;
     box-sizing: border-box;
   }
-  .p_wrap .project{
+  .p_wrap .portfolio {
     margin: 0 auto;
     width: 90%;
-    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 20px;
   }
-  .project .img_box {
-    width: 80vw; height: 40vw;
-    background-color: rgb(135, 223, 245);
-    margin-bottom: 10px;
+  .portfolio .img_box {
+    width: 80vw;
+    height: 40vw;
   }
-  .project .text_box{
-    width: 80vw; height: 40vw;
-    background-color: rgb(32, 57, 85);
-  }
-  .contact{
-    width: 100%; height: 200px;
-    background-color: rgb(57, 193, 185);
-  }
-  .email{
+  .img_box img {
     width: 100%;
+    height: 100%;
   }
-  
+  .portfolio .text_box {
+    width: 80vw;
+    height: 40vw;
+  }
+  .text_box h1,
+  p,
+  a {
+    margin: 10px 10px;
+    line-height: 1.5;
+  }
+  .text_box a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .text_box a:hover {
+    background-color: black;
+    color: white;
+  }
+  .contact {
+    width: 100%;
+    height: 200px;
+  }
+  .email {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+  }
 }
