@@ -1,18 +1,21 @@
-*{margin: 0; padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.wrap{
+.wrap {
   min-width: 320px;
   margin: 0 auto;
   position: relative;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   overflow: hidden;
 }
 
-section{
+section {
   width: 100%;
   height: 100%;
 }
-.home{
+.home {
   width: 100%;
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -20,27 +23,54 @@ section{
   justify-content: center;
   align-items: center;
 }
-.typing_box{
+.typing_box {
   text-align: center;
   font-size: 2.5vw;
   color: white;
 }
-.typing_box .text{
+.typing_box .text {
   font-weight: normal;
 }
-#cusor{
+#cusor {
   position: relative;
   display: inline-block;
 }
-#cusor::after{
+#cusor::after {
   content: "";
   display: block;
   position: absolute;
-  top: 0; right: -1%;
+  top: 0;
+  right: -1%;
   width: 3px;
   height: 100%;
   background-color: white;
 }
-#cusor.active::after{
+#cusor.active::after {
   display: none;
+}
+.about {
+  background-color: #f3f3f3;
+}
+.skills {
+  background-color: aliceblue;
+}
+.p_wrap {
+  background-color: aliceblue;
+}
+
+.text_box a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+.text_box a:hover {
+  background-color: black;
+  color: white;
 }
