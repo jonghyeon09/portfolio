@@ -81,15 +81,17 @@
   }
   .skills {
     width: 100%;
-    height: 700px;
+    height: 100%;
     text-align: center;
     padding: 60px;
     box-sizing: border-box;
   }
+  .skills h1 {
+    margin: 20px 0;
+  }
   .skills img {
     width: 100%;
     height: 100%;
-    border-radius: 10%;
   }
   .front,
   .back {
@@ -101,9 +103,9 @@
   }
   .front .logo,
   .back .logo {
-    width: auto;
+    max-width: 100%;
     height: 120px;
-    margin: 10px 10px;
+    margin: 20px 20px;
   }
   .p_wrap {
     width: 100%;

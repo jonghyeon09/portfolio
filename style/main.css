@@ -52,12 +52,15 @@ section {
   background-color: #f3f3f3;
 }
 .skills {
-  background-color: aliceblue;
+  background-color: lightgray;
 }
 .p_wrap {
-  background-color: aliceblue;
+  background-color: #f3f3f3;
 }
-
+.contact {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: white;
+}
 .text_box a {
   text-decoration: none;
   font-weight: bold;
