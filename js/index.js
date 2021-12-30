@@ -108,11 +108,6 @@ $(document).ready(function () {
     });
   }
 
-  //메뉴클릭시 색상변경
-  function m_color() {
-    $(window).scroll(function () {});
-  }
-
   //햄버거메뉴
   const span = document.querySelectorAll("span");
   let bt_count = false;
