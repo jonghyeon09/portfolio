@@ -7,7 +7,7 @@
   min-width: 320px;
   margin: 0 auto;
   position: relative;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   overflow: hidden;
 }
 
@@ -52,28 +52,42 @@ section {
   background-color: #f3f3f3;
 }
 .skills {
-  background-color: lightgray;
+  background-color: #eeeeee;
 }
 .p_wrap {
   background-color: #f3f3f3;
 }
 .contact {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  color: white;
+  background: white;
+  border-top: 1px solid #ccc;
 }
-.text_box a {
+.text_box .site {
   text-decoration: none;
   font-weight: bold;
   color: #000;
   display: block;
-  width: 80px;
-  height: 30px;
+  float: left;
+  width: 100px;
+  height: 50px;
   text-align: center;
-  line-height: 30px;
+  line-height: 50px;
   border: 1px solid black;
   border-radius: 1rem;
+  margin: 0 20px;
 }
-.text_box a:hover {
+.text_box .site:hover {
   background-color: black;
   color: white;
+}
+.text_box .github {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: 100%;
+  border-radius: 100%;
+}
+.text_box .github:hover {
+  filter: invert(100%);
+  background-color: white;
 }

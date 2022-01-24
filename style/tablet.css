@@ -2,77 +2,59 @@
   header {
     width: 100%;
     height: 60px;
-    position: relative;
     position: fixed;
-    background-color: white;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  }
-  header .h_menu {
-    width: 30px;
-    height: 20px;
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 100;
-    /* background-color: black; */
-  }
-  header .h_menu:hover {
-    cursor: pointer;
-  }
-  .h_menu span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: fixed;
-    position: absolute;
-    background-color: black;
-    border-radius: 2px;
-    transition: opacity 0.3s, top 0.3s, transform 0.3s;
-  }
-  .h_menu span:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .h_menu span:nth-child(3) {
-    bottom: 0;
-  }
-  .nav .nav_title {
-    display: none;
+    background-color: white;
   }
   .title {
     margin: 0 auto;
-    width: 150px;
-    height: 50px;
-    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .m_menu {
-    position: absolute;
-    top: 0px;
-    right: -160px;
-    width: 150px;
-    height: 100vh;
-    background-color: white;
-    padding: 60px 0 0 20px;
-    box-sizing: border-box;
-    z-index: 99;
-    box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5);
+  .nav {
+    max-width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    font-weight: bold;
   }
-  .m_menu .bt {
+  .nav .nav_title {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .nav .nav_title:hover {
+    cursor: pointer;
+    color: black;
+  }
+  .nav .m_menu {
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+  .nav .m_menu .bt {
     width: 100%;
-    height: 50px;
-    line-height: 50px;
-    /* background-color: red; */
+    height: 100%;
     list-style: none;
     color: gray;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .m_menu .bt:hover {
     cursor: pointer;
+    font-weight: bold;
+    color: black;
+  }
+  .m_menu .bt.color {
+    font-weight: bold;
     color: black;
   }
   .about {
@@ -91,23 +73,21 @@
     justify-content: center;
     align-items: center;
   }
-  h1 {
-    margin: 10px;
+  .about_text h1 {
+    margin: 10px 0;
   }
   .skills {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
   }
   .skills img {
     width: 100%;
     height: 100%;
-    background-size: cover;
   }
-  /* .skills p{
-    text-align: center;
-    font-size: 30px;
-  } */
+
   .front,
   .back {
     text-align: center;
@@ -122,56 +102,73 @@
     width: 120px;
     height: 120px;
     margin: 10px 10px;
-    border-radius: 20%;
   }
   .p_wrap {
     width: 100%;
-    background-color: gray;
     padding: 30px 0;
     box-sizing: border-box;
   }
   .p_wrap .portfolio {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
   }
+  .portfolio .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
   .portfolio .img_box {
-    width: 80vw;
-    height: 40vw;
+    width: 100%;
+    height: 50vw;
   }
   .img_box img {
     width: 100%;
     height: 100%;
   }
   .portfolio .text_box {
-    width: 80vw;
-    height: 40vw;
+    width: 100%;
+    height: 50vw;
   }
-  .text_box h1,
-  p,
-  a {
+  .text_box > h1,
+  .text_box > p,
+  .text_box > a {
     margin: 10px 10px;
-    line-height: 1.5;
   }
-  .text_box a {
+  .text_box .site {
     text-decoration: none;
     font-weight: bold;
     color: #000;
     display: block;
-    width: 80px;
+    float: left;
+    width: 100px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 1rem;
+    margin: 0 10px;
   }
-  .text_box a:hover {
+  .text_box .site:hover {
     background-color: black;
     color: white;
+  }
+  .text_box .github {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  .text_box .github img {
+    width: 100%;
   }
   .contact {
     width: 100%;

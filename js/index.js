@@ -90,19 +90,16 @@ $(document).ready(function () {
   nav();
 
   function nav() {
+    $("header").css("display", "none");
     $(window).scroll(function () {
       let scroll = $(this).scrollTop();
       if (scroll > 1) {
-        $("header").css({
-          "background-color": "white",
-        });
+        $("header").css({ display: "block" });
         document.querySelector("header").style.boxShadow =
           "0 2px 2px rgba(0, 0, 0, 0.5)";
       }
       if (scroll == 0) {
-        $("header").css({
-          "background-color": "rgba(0, 0, 0, 0)",
-        });
+        $("header").css("display", "none");
         document.querySelector("header").style.boxShadow = "0 0 0";
       }
     });
