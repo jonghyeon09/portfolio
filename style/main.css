@@ -18,14 +18,14 @@ section {
 .home {
   width: 100%;
   height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: linear-gradient(#123, #111);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .typing_box {
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   color: white;
 }
 .typing_box .text {
