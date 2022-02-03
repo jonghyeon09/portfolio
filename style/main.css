@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  overflow-x: hidden;
+}
 .wrap {
   min-width: 320px;
   margin: 0 auto;

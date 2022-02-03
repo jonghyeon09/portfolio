@@ -6,13 +6,14 @@
   border-radius: 50%;
   position: absolute;
   top: -5vh;
+  overflow: hidden;
 }
 @keyframes snowfall {
   0% {
     transform: translate3d(var(--left-ini), 0, 0);
   }
   100% {
-    transform: translate3d(var(--left-end), 100vh, 0);
+    transform: translate3d(var(--left-end), 110vh, 0);
   }
 }
 .snowflake:nth-child(1) {
