@@ -38,19 +38,19 @@ $(document).ready(function () {
     offset = $(".home").offset();
     scroll_ani();
   });
+  // $(bts[1]).click(function () {
+  //   offset = $(".about").offset();
+  //   scroll_ani();
+  // });
   $(bts[1]).click(function () {
-    offset = $(".about").offset();
-    scroll_ani();
-  });
-  $(bts[2]).click(function () {
     offset = $(".skills").offset();
     scroll_ani();
   });
-  $(bts[3]).click(function () {
+  $(bts[2]).click(function () {
     offset = $(".p_wrap").offset();
     scroll_ani();
   });
-  $(bts[4]).click(function () {
+  $(bts[3]).click(function () {
     offset = $(".contact").offset();
     scroll_ani();
   });
@@ -68,21 +68,21 @@ $(document).ready(function () {
       $(bts).removeClass("color"); //컬러초기화
       $(bts[0]).addClass("color"); //클릭시 컬러변경
     }
-    if ($(this).scrollTop() >= $(".about").offset().top - m_menuh) {
+    // if ($(this).scrollTop() >= $(".about").offset().top - m_menuh) {
+    //   $(bts).removeClass("color");
+    //   $(bts[1]).addClass("color");
+    // }
+    if ($(this).scrollTop() >= $(".skills").offset().top - m_menuh) {
       $(bts).removeClass("color");
       $(bts[1]).addClass("color");
     }
-    if ($(this).scrollTop() >= $(".skills").offset().top - m_menuh) {
+    if ($(this).scrollTop() >= $(".p_wrap").offset().top - m_menuh) {
       $(bts).removeClass("color");
       $(bts[2]).addClass("color");
     }
-    if ($(this).scrollTop() >= $(".p_wrap").offset().top - m_menuh) {
-      $(bts).removeClass("color");
-      $(bts[3]).addClass("color");
-    }
     if ($(this).scrollTop() >= $("body").height() - homeh) {
       $(bts).removeClass("color");
-      $(bts[4]).addClass("color");
+      $(bts[3]).addClass("color");
     }
   });
 
